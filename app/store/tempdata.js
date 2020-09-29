@@ -1,0 +1,68 @@
+const furnitures = [
+  {
+    id: 1,
+    title: "Product Name 1",
+    price: 99.99,
+    image: require("../assets/logo.png"),
+    quantity: 1,
+    description: "Product description",
+    status: false,
+    available: true,
+  },
+  {
+    id: 2,
+    title: "Product Name 2",
+    price: 99.99,
+    image: require("../assets/logo.png"),
+    quantity: 1,
+    description: "Product description",
+    status: true,
+    available: true,
+  },
+  {
+    id: 3,
+    title: "Product Name 3",
+    price: 99.99,
+    image: require("../assets/logo.png"),
+    quantity: 1,
+    description: "Product description",
+    status: true,
+    available: false,
+  },
+];
+const services = [
+  {
+    id: 1,
+    title: "Service Name 1",
+    price: 99.99,
+    image: require("../assets/logo.png"),
+    quantity: 1,
+    description: "Product description",
+    status: false,
+    available: true,
+  },
+  {
+    id: 2,
+    title: "Service Name 1",
+    price: 99.99,
+    image: require("../assets/logo.png"),
+    quantity: 1,
+    description: "Product description",
+    status: true,
+    available: true,
+  },
+  {
+    id: 3,
+    title: "Service Name 1",
+    price: 99.99,
+    image: require("../assets/logo.png"),
+    quantity: 1,
+    description: "Product description",
+    status: true,
+    available: false,
+  },
+];
+export default {
+  furnitures,
+  services,
+};
