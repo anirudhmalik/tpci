@@ -3,7 +3,7 @@ import { View, StyleSheet, TouchableWithoutFeedback } from "react-native";
 import AppText from "./AppText";
 import colors from "../config/colors";
 
-function SubmitButton({ text, onPress }) {
+function SubmitButton2({ text, onPress }) {
   return (
     <TouchableWithoutFeedback onPress={onPress}>
       <View style={styles.container}>
@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   container: {
     marginTop: 35,
     height: 40,
-    width: "100%",
+    width: "50%",
     paddingLeft: 10,
     marginBottom: 20,
   },
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     backgroundColor: "black",
     height: 40,
-    width: "45%",
+    width: "95%",
     borderTopRightRadius: 20,
     borderBottomLeftRadius: 20,
   },
@@ -37,4 +37,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SubmitButton;
+export default SubmitButton2;

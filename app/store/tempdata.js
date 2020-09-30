@@ -2,7 +2,7 @@ const furnitures = [
   {
     id: 1,
     title: "Product Name 1",
-    price: 99.99,
+    price: 99,
     image: require("../assets/logo.png"),
     quantity: 1,
     description: "Product description",
@@ -12,7 +12,7 @@ const furnitures = [
   {
     id: 2,
     title: "Product Name 2",
-    price: 99.99,
+    price: 99,
     image: require("../assets/logo.png"),
     quantity: 1,
     description: "Product description",
@@ -22,7 +22,7 @@ const furnitures = [
   {
     id: 3,
     title: "Product Name 3",
-    price: 99.99,
+    price: 99,
     image: require("../assets/logo.png"),
     quantity: 1,
     description: "Product description",
@@ -34,7 +34,7 @@ const services = [
   {
     id: 1,
     title: "Service Name 1",
-    price: 99.99,
+    price: 99,
     image: require("../assets/logo.png"),
     quantity: 1,
     description: "Product description",
@@ -44,7 +44,7 @@ const services = [
   {
     id: 2,
     title: "Service Name 1",
-    price: 99.99,
+    price: 99,
     image: require("../assets/logo.png"),
     quantity: 1,
     description: "Product description",
@@ -54,7 +54,7 @@ const services = [
   {
     id: 3,
     title: "Service Name 1",
-    price: 99.99,
+    price: 99,
     image: require("../assets/logo.png"),
     quantity: 1,
     description: "Product description",

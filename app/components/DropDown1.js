@@ -4,7 +4,7 @@ import AppText from "./AppText";
 import colors from "../config/colors";
 import DD1List from "./DD1List";
 
-function DropDown1(props) {
+function DropDown1({ setCost }) {
   return (
     <View style={styles.container}>
       <View style={styles.container2}>
@@ -14,7 +14,7 @@ function DropDown1(props) {
           requirement from the list below
         </AppText>
       </View>
-      <DD1List></DD1List>
+      <DD1List setCost={setCost}></DD1List>
     </View>
   );
 }

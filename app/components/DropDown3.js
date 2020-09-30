@@ -3,7 +3,7 @@ import { View, StyleSheet } from "react-native";
 import AppText from "./AppText";
 import colors from "../config/colors";
 import DD3List from "./DD3List";
-function DropDown3(props) {
+function DropDown3({ setCost, cost }) {
   return (
     <View style={styles.container}>
       <View style={styles.container2}>
@@ -12,7 +12,7 @@ function DropDown3(props) {
           purchase
         </AppText>
       </View>
-      <DD3List></DD3List>
+      <DD3List setCost={setCost} cost={cost}></DD3List>
     </View>
   );
 }

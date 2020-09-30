@@ -4,7 +4,7 @@ import AppText from "./AppText";
 import colors from "../config/colors";
 import ProductCard from "./ProductCard";
 
-function InclusionList(props) {
+function InclusionList({ setCost }) {
   return (
     <>
       <View style={styles.container}>
@@ -13,10 +13,12 @@ function InclusionList(props) {
       <ProductCard
         name={"Product name 1"}
         iconName={"chair-rolling"}
+        setCost={setCost}
       ></ProductCard>
       <ProductCard
         name={"Product name 2"}
         iconName={"gift-outline"}
+        setCost={setCost}
       ></ProductCard>
       <View style={styles.container}>
         <AppText style={styles.text2}>

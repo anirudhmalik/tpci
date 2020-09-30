@@ -1,10 +1,11 @@
-import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet } from "react-native";
 import PurchaseService from "./app/screen/PurchaseService";
+import Manageproducts from "./app/screen/ManageProducts";
 
 export default function App() {
-  return <PurchaseService></PurchaseService>;
+  //return <PurchaseService></PurchaseService>;
+  return <Manageproducts></Manageproducts>;
 }
 
 const styles = StyleSheet.create({

@@ -4,7 +4,8 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import colors from "../config/colors";
 import AppText from "./AppText";
 
-function ProductCard({ name, iconName }) {
+function ProductCard({ name, iconName, setCost }) {
+  const price = 99;
   return (
     <View style={styles.container}>
       <View style={styles.icon1}>

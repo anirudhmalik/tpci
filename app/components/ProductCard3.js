@@ -9,11 +9,10 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import AppText from "./AppText";
 import colors from "../config/colors";
 
-function ProductCard2({ item, setCost, cost }) {
+function ProductCard3({ item, setCost, cost }) {
   const [totalPrice, SetTotalPrice] = useState(0);
   const [quantity, setQuantity] = useState(0);
   const [visible, setVisible] = useState(true);
-
   return (
     <View style={styles.container}>
       <View style={styles.title}>
@@ -163,4 +162,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ProductCard2;
+export default ProductCard3;

@@ -13,10 +13,11 @@ function PurchaseService(props) {
   const [visible1, setVisible1] = useState(false);
   const [visible2, setVisible2] = useState(false);
   const [visible3, setVisible3] = useState(false);
+  const [cost, setCost] = useState(0);
   return (
     <Screen>
       <ScrollView showsVerticalScrollIndicator={false}>
-        <Header />
+        <Header text={"Purchase Service"} />
         <SubHeader
           text={"MANAGE COMPLEMENTRY SERVICE"}
           visible={visible1}
@@ -36,7 +37,7 @@ function PurchaseService(props) {
             setVisible3(false);
           }}
         />
-        {visible2 ? <DropDown2 /> : <></>}
+        {visible2 ? <DropDown2 setCost={setCost} cost={cost} /> : <></>}
         <SubHeader
           text={"ORDER ADDITIONAL SERVICES"}
           visible={visible3}
@@ -46,9 +47,9 @@ function PurchaseService(props) {
             setVisible2(false);
           }}
         />
-        {visible3 ? <DropDown3 /> : <></>}
-        <TotalBill cost={"999.99"} />
-        <SubmitButton />
+        {visible3 ? <DropDown3 setCost={setCost} cost={cost} /> : <></>}
+        <TotalBill cost={cost} />
+        <SubmitButton text={"Submit"} onPress={() => console.log("Submit")} />
       </ScrollView>
     </Screen>
   );

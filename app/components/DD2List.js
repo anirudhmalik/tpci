@@ -5,7 +5,7 @@ import AppText from "./AppText";
 import colors from "../config/colors";
 import ProductList from "./ProductList";
 
-function DD2List(props) {
+function DD2List({ setCost, cost }) {
   return (
     <>
       <View style={styles.container1}>
@@ -20,7 +20,7 @@ function DD2List(props) {
           />
         </View>
       </View>
-      <ProductList></ProductList>
+      <ProductList setCost={setCost} cost={cost}></ProductList>
     </>
   );
 }

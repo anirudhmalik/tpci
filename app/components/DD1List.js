@@ -4,7 +4,7 @@ import AppText from "./AppText";
 import colors from "../config/colors";
 import InclusionList from "./InclusionList";
 
-function DD1List(props) {
+function DD1List({ setCost }) {
   return (
     <>
       <View style={styles.container}>
@@ -13,7 +13,7 @@ function DD1List(props) {
       <View style={styles.container2}>
         <AppText style={styles.text}>1.18 SQM RAW SPACE</AppText>
       </View>
-      <InclusionList></InclusionList>
+      <InclusionList setCost={setCost}></InclusionList>
     </>
   );
 }

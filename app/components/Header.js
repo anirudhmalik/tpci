@@ -1,10 +1,10 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
 import AppText from "./AppText";
-function Header(props) {
+function Header({ text }) {
   return (
     <View style={styles.container}>
-      <AppText style={styles.text}>Purchase Service</AppText>
+      <AppText style={styles.text}>{text}</AppText>
     </View>
   );
 }
